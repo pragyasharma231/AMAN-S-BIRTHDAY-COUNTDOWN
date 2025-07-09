@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 Days to Aman's Birthday!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #FF9E9E, #FFD6A5, #FFFEC4, #CBFFA9);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #D32F2F;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .day-box {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .day-box:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 1);
+        }
+        .day-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #D32F2F;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>13 DAYS LEFT!</h1>
+    <div class="grid">
+        <!-- Days 13 to 1 -->
+        <div class="day-box" onclick="window.location.href='day13.html'">
+            <div class="day-number">13</div>
+            <div>Click to reveal!</div>
+        </div>
+        <div class="day-box" onclick="window.location.href='day12.html'">
+            <div class="day-number">12</div>
+            <div>Click to reveal!</div>
+        </div>
+        <!-- Add more days (up to Day 1) -->
+    </div>
+</body>
+</html>
